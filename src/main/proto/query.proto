@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package org.zndx.wx.api;
+
+option java_multiple_files = true;
+option java_package = "org.zndx.wx.api";
+
+service QueryService {
+    rpc  Fetch (BaseRequest) returns (BaseResponse) {}
+}
+
+message BaseRequest {
+    PipelineConfig config = 1;
+}
+
+message BaseResponse {
+    Status status = 1;
+}
+
+message Status {
+    string text = 1;
+}
+
+message PipelineConfig {
+    repeated string items = 1;
+}
