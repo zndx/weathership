@@ -15,7 +15,7 @@
         <akka.scala.version>2.12</akka.scala.version>
         <akka.version>2.5.20</akka.version>
         <grpc.version>1.16.1</grpc.version>
-        <ignite.version>2.8.0</ignite.version>
+        <ignite.version>2.8.1</ignite.version>
         <mainClass>org.zndx.wx.Main</mainClass>
     </properties>
     <dependencies>
